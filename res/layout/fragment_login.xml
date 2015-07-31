@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    android:background="@drawable/photo2"
+    android:gravity='center'
+     >
+
+     
+    
+    <LinearLayout 
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+               
+       <LinearLayout 
+            android:id="@+id/lluser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <TextView android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/tv_loginnum"
+                android:textSize="18sp"/>
+            
+            <EditText android:id="@+id/ed_user"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:hint="请输入账号"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+            	
+            	<requestFocus />
+
+        </LinearLayout>
+        
+       <LinearLayout 
+            android:id="@+id/llupwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <TextView android:id="@+id/tv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/tv_pass"
+                android:textSize="18sp"/>
+            
+            <EditText android:id="@+id/ed_pwd"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+            	
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <Button android:id="@+id/button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/txlogin"/>
+            
+            <Button android:id="@+id/button_register"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:text="@string/txregister"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/photo2">
+    
+    <include layout="@layout/main_head" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/checkame1"
+            style="@style/text"
+            android:text="交易金额"
+            android:textColor="#CDC1C5" >
+        </TextView>
+
+        <TextView
+           
+            android:id="@+id/checkmoney"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:textSize="50sp"
+            android:text="50.00"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/text"
+            android:text="商品名称"
+            android:textSize="15sp"
+            android:textColor="#CDC1C5" 
+		>
+        </TextView>
+
+        <TextView
+            android:id="@+id/checkname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="吃放"
+            android:textSize="15sp"
+			 >
+        </TextView>
+    </LinearLayout>
+    
+        <View style="@style/view" />
+        
+        <LinearLayout style="@style/LinearLayout" >
+
+        <TextView
+            style="@style/text"
+            android:text="账目类型"
+            android:textColor="#CDC1C5"
+            android:textSize="15sp" 
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/checkcountname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="支出/收入"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    
+        <LinearLayout style="@style/LinearLayout" 
+            android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/text"
+            android:text="支付方式"
+            android:textColor="#CDC1C5"
+            android:textSize="15sp" 
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/checkcounttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="即时到账"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/text"
+            android:text="创建时间"
+            android:textColor="#CDC1C5"
+            android:textSize="15sp" >
+        </TextView>
+        
+        <TextView
+            android:id="@+id/checkdataView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:hint="这里显示日期"
+            android:textSize="15sp"
+			 />
+        
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout" >
+
+        <TextView
+            style="@style/text"
+            android:textColor="#d84d00" >
+        </TextView>
+    </LinearLayout>
+
+    <View style="@style/view" >
+    </View>
+
+
+
+    <LinearLayout style="@style/LinearLayout" >
+
+        <TextView
+            style="@style/text"
+            android:text="备注"
+            android:textColor="#CDC1C5"
+            android:textSize="15sp"
+             />
+    </LinearLayout>
+
+    <View style="@style/view" >
+    </View>
+
+    <LinearLayout 
+        style="@style/text" 
+        android:orientation="horizontal">
+        
+         <ImageView android:id="@+id/count_imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:background="@android:color/darker_gray"
+                android:cropToPadding="true"/>
+
+        <TextView
+            android:id="@+id/checkbeizhu"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:minLines="3"
+            android:textSize="15sp"
+            android:text="备注" >
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    
+
+</LinearLayout>

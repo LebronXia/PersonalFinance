@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/photo2">
+	<LinearLayout 
+	    android:id="@+id/linear1"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:gravity="center">
+	    
+	    <TextView android:id="@+id/date_textview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:text="日期"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/linear2"
+	    android:layout_below="@id/linear1"
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp">
+	    
+	    <TextView android:id="@+id/expand_textview"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="支出:0.0"
+	        android:textSize="20sp"/>
+	    
+	    <TextView android:id="@+id/income_textview"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="收入:0.0"
+	        android:textSize="20sp"/>
+	</LinearLayout>
+	
+	<ListView 
+	    android:layout_below="@id/linear2"
+	    android:id="@+id/list_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"></ListView>
+    
+
+</RelativeLayout>

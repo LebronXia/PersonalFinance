@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo2"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text"
+            android:text="选择账目"
+            android:textSize="20sp"
+             >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/chooseType"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text"
+            android:text="填入费用"
+            android:textSize="20sp"
+             >
+        </TextView>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_width="232dp"
+            android:id="@+id/money"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+             >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text"
+            android:text="选择时间"
+            android:textSize="20sp"
+             >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dataView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:hint="这里显示日期"
+             />
+
+        <Button
+            android:id="@+id/chooseData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期"
+             />
+
+        
+    </LinearLayout>
+
+    <View style="@style/view" />
+
+    <LinearLayout style="@style/LinearLayout" >
+
+        <TextView
+            style="@style/text"
+            android:textColor="#d84d00" >
+        </TextView>
+    </LinearLayout>
+
+    <View style="@style/view" >
+    </View>
+
+    <LinearLayout style="@style/LinearLayout" >
+
+        
+        <TextView
+            style="@style/text"
+            android:text="账目类型"
+            android:textSize="20sp"
+             >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/counttype"
+            android:layout_marginLeft="10dp"
+            style="@style/spinner"
+            android:minWidth="200dip"
+             />
+    </LinearLayout>
+
+    <View style="@style/view" />
+
+    <LinearLayout style="@style/LinearLayout" >
+
+        <TextView
+            style="@style/text"
+            android:text="添加备注"
+            android:textSize="20sp"
+             />
+    </LinearLayout>
+
+    <View style="@style/view" >
+    </View>
+
+    <LinearLayout style="@style/text" >
+
+        <ImageButton android:id="@+id/crime_imageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@android:drawable/ic_menu_camera"/>
+        <EditText
+            android:id="@+id/beizhu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+             >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout" 
+        android:gravity="center">
+
+        <Button
+            style="@style/spinner"
+            android:id="@+id/end_ok"
+            android:text="提交"
+            android:textSize="24dip"
+            android:textStyle="bold"
+            android:width="160dip" />
+
+        <Button
+            style="@style/spinner"
+            android:text="取消"
+            android:textSize="24dip"
+            android:textStyle="bold"
+             android:id="@+id/end_cancel"
+            android:width="160dip" />
+    </LinearLayout>
+
+</LinearLayout>

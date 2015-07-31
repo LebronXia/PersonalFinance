@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:id="@+id/lluserreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <TextView android:id="@+id/tv_userreg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/tv_loginnum"
+                android:textSize="18sp"/>
+            
+            <EditText android:id="@+id/ed_userreg"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+            	
+            	<requestFocus />
+        </LinearLayout>
+        
+       <LinearLayout 
+            android:id="@+id/llpwdreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <TextView android:id="@+id/tv_pwdreg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/tv_password"
+                android:textSize="18sp"/>
+            
+            <EditText android:id="@+id/ed_pwdreg"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+            	
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/llpwdreg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <TextView android:id="@+id/tv_pwdreg2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/tv_conregpwd"
+                android:textSize="18sp"/>
+            
+            <EditText android:id="@+id/ed_pwdreg2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="22dp"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+            	
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <Button android:id="@+id/butten_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/txsubmit"/>
+            
+            <Button android:id="@+id/button_cancelr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:text="@string/txcancel"/>
+        </LinearLayout>
+       
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
